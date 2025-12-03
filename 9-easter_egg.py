@@ -1,2 +1,2 @@
-#! /user/bin/pyhton3
+#!/user/bin/pyhton3
 import this
