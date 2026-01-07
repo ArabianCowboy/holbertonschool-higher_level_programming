@@ -16,13 +16,19 @@ def text_indentation(text):
     if type(text) is not str:
         raise TypeError("text must be a string")
 
-    buffer = ""
-    for char in text:
-        buffer += char
-        if char in ".?:":
-            print(buffer.strip())
-            print()
-            buffer = ""
+    out = ""
+    chunk = ""
 
-    if buffer.strip():
-        print(buffer.strip())
+    for ch in text:
+        chunk += ch
+        if ch in ".?:":
+            line = chunk.strip()
+            if line:
+                out += line + "\n\n"
+            chunk = ""
+
+    last = chunk.strip()
+    if last:
+        out += last
+
+    print(out, end="")
