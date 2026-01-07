@@ -1,12 +1,15 @@
 #!/usr/bin/python3
 """
-Module that provides a function to divide all elements of a matrix.
+Matrix division module.
+
+This module provides matrix_divided, which divides a matrix by a number.
+It validates inputs and returns a new rounded matrix.
 """
 
 
 def matrix_divided(matrix, div):
     """
-    Divides all elements of a matrix by div.
+    Divide all elements of a matrix by div.
 
     Returns a new matrix with results rounded to 2 decimal places.
     """
