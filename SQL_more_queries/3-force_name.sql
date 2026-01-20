@@ -1,5 +1,8 @@
- -- task 3 
-CREATE TABLE IF NOT EXISTS (
-id INT,
-name VARCHAR(256) NOT NULL
+-- 3. Always a name
+-- Create table force_name with id and non-null name
+
+CREATE TABLE IF NOT EXISTS force_name (
+    id INT,
+    name VARCHAR(256) NOT NULL
 );
+
