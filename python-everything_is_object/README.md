@@ -81,3 +81,31 @@ a is b  # False - different objects (identity)
 ### Aliasing
 
 ```python
+# Aliasing - both variables point to the same object
+list1 = [1, 2, 3]
+list2 = list1  # list2 is an alias of list1
+
+# Modifying list1 affects list2
+list1.append(4)
+print(list2)  # [1, 2, 3, 4]
+```
+
+## Requirements
+
+- Python 3.8+
+- All scripts are executable (`#!/usr/bin/python3`)
+- Code follows PEP 8 style guidelines
+
+## Resources
+
+- [Blog Post: Mutable, Immutable... Everything is an Object!](./blog_post.md)
+- [Python Documentation: Data Model](https://docs.python.org/3/reference/datamodel.html)
+- [Python Documentation: Built-in Functions](https://docs.python.org/3/library/functions.html)
+
+## Author
+
+**Holberton School Student**
+
+## License
+
+This project is part of the Holberton School curriculum.
