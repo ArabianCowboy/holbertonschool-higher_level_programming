@@ -7,11 +7,12 @@ text_indentation tests
 Basic punctuation:
 
 >>> text_indentation("Hello. How are you? Fine:")
-Hello
-
-How are you
-
-Fine
+Hello.
+<BLANKLINE>
+How are you?
+<BLANKLINE>
+Fine:
+<BLANKLINE>
 
 No punctuation:
 
@@ -21,9 +22,10 @@ Hello world
 Leading/trailing spaces:
 
 >>> text_indentation("  Hello.  World?  ")
-Hello
-
-World
+Hello.
+<BLANKLINE>
+World?
+<BLANKLINE>
 
 Type checking:
 
